@@ -26,3 +26,6 @@ sudo systemctl start mysql.service
 
 https://ganeshchandrasekaran.com/dbeaver-public-key-retrieval-is-not-allowed-77eba055bbcd
 
+# Creating Docker Image and Testing it
+
+https://jojozhuang.github.io/architecture/creating-mysql-image-with-docker-file/
