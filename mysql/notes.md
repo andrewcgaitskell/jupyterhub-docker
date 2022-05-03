@@ -8,5 +8,21 @@ sudo apt install mysql-server
 
 sudo systemctl start mysql.service
 
-sudo mysql_secure_installation
+      mysql -u root -p
+      -- root password
+
+      CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+
+      GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' WITH GRANT OPTION;
+
+      CREATE USER 'username'@'%' IDENTIFIED BY 'password';
+
+      GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' WITH GRANT OPTION;
+
+      FLUSH PRIVILEGES;
+
+      EXIT;
+
+
+https://ganeshchandrasekaran.com/dbeaver-public-key-retrieval-is-not-allowed-77eba055bbcd
 
