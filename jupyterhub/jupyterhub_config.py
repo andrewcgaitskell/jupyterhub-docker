@@ -26,7 +26,6 @@ c.Spawner.notebook_dir='/usr/local/share/jupyterhub/'
 c.Spawner.cmd = '/usr/local/share/jupyterhub/env/bin/jupyterhub-singleuser'
 
 ## The location of jupyterhub data files (e.g. /usr/local/share/jupyterhub)
-#  Default: '/home/andrew_gaitskell/jupyterhub/env/share/jupyterhub'
 
 c.JupyterHub.data_files_path = '/usr/local/share/jupyterhub/env/share/jupyterhub'
 
@@ -44,7 +43,7 @@ c.JupyterHub.hub_ip = '127.0.0.1'
 #  Defaults to an empty set, in which case no user has admin access.
 #  Default: set()
 # c.Authenticator.admin_users = set()
-c.Authenticator.admin_users = {'jupyterhub','skully'}
+c.Authenticator.admin_users = {'jupyterhub'}
 
 ## Set of usernames that are allowed to log in.
 #  
@@ -54,5 +53,5 @@ c.Authenticator.admin_users = {'jupyterhub','skully'}
 #  the 'user' role on hub startup.
 #  
 #  If empty, does not perform any additional restriction.
-c.Authenticator.allowed_users = {'jupyterhub','skully','andyg'}
+c.Authenticator.allowed_users = {'jupyterhub'}
 
