@@ -32,3 +32,26 @@ https://jojozhuang.github.io/architecture/creating-mysql-image-with-docker-file/
 
 https://hevodata.com/learn/docker-mysql/
 
+
+
+# build images
+
+docker build -t mysql_ag:0.1 .
+
+# run container
+
+docker run --detach --name=mysql_ag --publish 3306:3306 mysql_ag:0.1
+
+# list all containers
+
+docker container ls -a
+
+# show container logs
+
+docker logs 43d3dd7e8efc
+
+# delete all images and containers
+
+sudo docker rm -vf $(sudo docker ps -aq)
+
+docker rmi -f $(sudo docker images -aq)
