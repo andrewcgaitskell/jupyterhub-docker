@@ -9,7 +9,7 @@ c.LocalAuthenticator.create_system_users = True
 c.JupyterHub.bind_url = 'http://0.0.0.0:8000/'
 
 #  Default: 'jupyterhub_config.py'
-c.JupyterHub.config_file = '/src/jupyterhub_config.py'
+c.JupyterHub.config_file = '/src/jupyterhub/jupyterhub_config.py'
 
 ## File in which to store the cookie secret.
 #  Default: 'jupyterhub_cookie_secret'
