@@ -1,5 +1,5 @@
 
-# mapping github users to systemn users
+# mapping github users to system users
 https://github.com/jupyterhub/dockerspawner/issues/94
 
 # run container as host user not root
